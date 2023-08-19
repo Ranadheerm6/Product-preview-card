@@ -22,7 +22,7 @@ body{
 .aside{
     max-width: 253px; 
     border-radius: 10px;
-    height: 380px;
+    
     border-right: 0px;
 }
 
@@ -34,10 +34,14 @@ body{
     background-color: hsl(0, 0%, 100%)
 }
 
+.left{
+    height: 380px;
+}
+
 .prod-pic{
-    border-radius: 10px;
     border-bottom-right-radius: 0px;
     border-top-right-radius: 0px;
+    height: 380px;
 }
 
 .title{
@@ -107,4 +111,26 @@ button{
 
 button:active{
     background-color: hsl(159, 36%, 17%);
+}
+
+@media only screen and (max-width: 375px){
+	.main{
+        flex-direction: column;
+    }
+
+    .right{
+        
+        border-radius: 0px 0px 15px 15px;
+    }
+    .prod-pic{
+   
+        height: 210px;
+        width: 253px;
+        object-fit: cover;
+        border-radius: 15px 15px 0px 0px;
+    }
+
+    .left{
+        height: 210px;
+    }
 }
